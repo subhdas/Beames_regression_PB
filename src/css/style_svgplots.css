@@ -1,0 +1,328 @@
+/* corr target and variable line styles here */
+.line {
+  stroke: #E4002B;
+  fill: none;
+  stroke-width: 3;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+text {
+  fill: lightgray;
+}
+
+.text-label {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.singlescatplot_circles {
+  /* stroke: #293b47; */
+  fill: #7A99AC
+}
+
+/* scatterplot matrix stylng  */
+
+svg {
+  font: 10px sans-serif;
+  /* padding: 4px; */
+}
+
+.axis,
+.frame {
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #ddd;
+}
+
+.axis path {
+  stroke: rgb(180, 180, 180);
+  stroke-width: 0.1;
+}
+
+.cell text {
+  font-weight: bold;
+  text-transform: capitalize;
+  fill: black;
+}
+
+.frame {
+  fill: none;
+  stroke: #aaa;
+}
+
+circle {
+  fill-opacity: .7;
+}
+
+circle.hidden {
+  fill: #ccc !important;
+}
+
+.extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}
+
+
+/* feature vis stylling  */
+.cortargetdiv {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  /* height: 100%; */
+  /* justify-content: center; */
+  max-width: 700px;
+  /* flex-direction: column; */
+  overflow-y: auto;
+}
+
+.cortargetsvgdiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cormatrixdiv {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.histomultiplediv {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  overflow-y: auto;
+  min-height: 800px;
+}
+
+.featurevisdiv {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.featvis_btndiv {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid rgb(82, 82, 82);
+
+}
+
+.featvisbtns {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+
+/* radial bar chart styling hree  */
+
+.radialbars_wrapdiv {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 100%;
+  max-height: 400px;
+  /* min-height: 300px; */
+  padding: 10px;
+  border-bottom: 1px solid rgb(82, 82, 82);
+}
+
+
+.txt_radial_persist{
+  display: flex;
+  /* width: 50%; */
+  /* height: 100%; */
+  flex-direction: column;
+  padding: 5px;
+  padding-right: 15px;
+}
+
+#modelidspan_radialtxt{
+  color: black;
+  background: lightgray;
+  padding: 5px;
+  margin: 10px;
+
+}
+
+.txt_radial_hover {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  /* height: 100%; */
+  border-left: 0.5px dashed gray;
+  padding: 5px;
+}
+.radialtext_content{
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-size: 1.8.em;
+  border-top: 0.5px dashed gray;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.radialbardiv {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+/* styling unit histo bar plots */
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+
+.circle_unitvis,
+.circle_linevis_inst {
+  /* fill: #FF7700;
+  fill-opacity: 0.4; */
+}
+
+.axis-unitvis {
+  stroke-width: 0.5px;
+  stroke: #888;
+  font: 10px avenir next, sans-serif;
+}
+
+.axis-unitvis>path {
+  stroke: #888;
+}
+
+/* brushing rect styling */
+.selection {}
+
+
+/* stylng for line vis for train test */
+
+.wraplinevis {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding: 5px; */
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+
+.wraplinevis_header {
+  display: flex;
+  width: 100%;
+  height: 35px;
+  /* padding: 5px; */
+  border-bottom: 1px solid gray;
+}
+
+.linevis_line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 1;
+}
+
+.linevis_mid_line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.3;
+}
+
+.linevis_vert_line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.8;
+}
+
+
+.svg_linevis_1stvis,
+.svg_linevis_tt {
+  padding: 5px;
+}
+
+
+/* following for rect train test lines vis */
+.stop-left {
+  stop-color: #ffffff;
+}
+
+.stop-right {
+  stop-color: #ff7700;
+}
+
+.stop-right-bot {
+  stop-color: #000000;
+}
+
+.stop-left-bot {
+  stop-color: #ff7700;
+
+}
+
+#rect_traintest_id{
+  background: rgba(120,120,120, 0.5);
+}
+.rect_traintest {
+  /* fill: url(#topGradient); */
+}
+
+.rect_tt_top {
+  fill: url(#topGradient);
+}
+
+.rect_tt_bottom {
+  fill: url(#botGradient);
+}
+
+.rect_traintest_hover {
+  fill: #ffffff
+}
+
+
+
+.featwtvisdiv{
+  display: flex;
+  justify-content: center;
+  border-left: 1px dashed gray;
+  padding: 5px;
+  width: 60%;
+  height: 100%;
+
+}
+
+
+.rect_featwt {
+  fill: #ffab00;
+}

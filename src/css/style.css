@@ -1,0 +1,145 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 850px; */
+  height: 100%;
+  background: #3E3E3E;
+  font-family: 'Roboto';
+  font-size: 13px;
+  overflow: hidden;
+}
+
+/*scroll bars*/
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+canvas {
+  display: block;
+}
+
+/* layout style */
+.headbar {
+  display: flex;
+  height: auto;
+  background: rgb(37, 37, 37);
+  width: 100%;
+  padding: 5px;
+}
+
+.mainbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid gray;
+  /* padding: 10px; */
+}
+
+.viewbar{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.detailbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  align-items: center;
+}
+
+#sketchbar{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  /* padding-bottom: 5px; */
+}
+
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
+  border-left: 1px solid gray;
+  height: 100%;
+  min-width: 700px;
+}
+
+.titleh1 {
+  color: gray;
+  font-size: 0.9em;
+  height: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+
+/* boid stylings  */
+.tooltip_boid {
+  position: absolute;
+  width: auto;
+  height: auto;
+  background: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray
+}
+
+/* tooltip class styling  */
+
+.tooltipcontainer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  /* padding: 5px; */
+  border: 1px solid gray;
+  justify-items: flex-start;
+  background: lightgray;
+  min-width: 100px;
+}
+
+.ttipcontent{
+  padding: 7px;
+  display: flex;
+  border-bottom: 1px dashed gray;
+  font-size: 0.9em;
+}
+
+.ttip_blackheader{
+  background: black;
+  width: 100%;
+  height: 20px;
+}
+
+.ttipkey{
+  font-weight: bolder;
+}

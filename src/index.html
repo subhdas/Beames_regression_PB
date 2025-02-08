@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/machinelearn/machinelearn.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/machinelearn@2.1.5/machinelearn.min.js"></script>
+    <script src="https://www.lactame.com/lib/ml/4.0.0/ml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/machinelearn@2.1.5/preprocessing/label.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/modelscript@2.4.0/build/modelscript.umd.min.js"></script> -->
+    <script src="./lib/Stats.js"></script>
+    <script src="./lib/p5.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+
+    <!-- ionic framework -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+    <!-- UIkit CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+
+    <!-- get skeleton -->
+    <link rel=" stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_ui.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_svgplots.css">
+
+    <title>L E G I O N : Model Selector</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class='headbar'>
+        <div class='titleh1'>L E G I O N</div>
+
+        <div class='controlinput'>
+            <div class="uk-inline">
+                <a href="" class="uk-icon-button uk-margin-small-right controlbtnheader" uk-icon="grid"
+                    uk-tooltip="title: Train or Load Models" id="load_trainmdls_btn"></a>
+                <a href="" class="uk-icon-button uk-margin-small-right controlbtnheader" uk-icon="settings"
+                    uk-tooltip="title: Preferences" id="sidebar"></a>
+                <div uk-dropdown="mode: click" id="dropdowndivId" class="dropdowndivclass">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='mainbar'>
+        <div class='viewbar'>
+            <div id="sketchbar">
+                <div id="sketchbar_headbar"></div>
+                <!-- Canvas p5 sketch will go here! -->
+            </div>
+            <div class='detailbar'>
+                <!-- should contatin model details -->
+            </div>
+        </div>
+        <div class='sidebar'>
+            <div id='loss-cont'></div>
+            <div id='acc-cont'></div>
+        </div>
+    </div>
+
+    <!-- tooltip contaner div here  -->
+    <div class='tooltipcontainer' id='tooltipcontainerId'></div>
+    <script src="./p5_before/p5_setup.js"></script>
+    <script src="./phaser_code/phaser.js"></script>
+    <script src="./phaser_code/workflow_selector.js"></script>
+    <script src="./phaser_code/container_grid.js"></script>
+    <script src="./phaser_code/sketchbar_header.js"></script>
+    <script src="./phaser_code/modeldraw_cells.js"></script>
+    <script src="./p5_before/boids_container.js"></script>
+    <script src="./p5_before/boids_attractors.js"></script>
+    <script src="./model_data/dataobject.js"></script>
+    <script src="./model_data/manage_models.js"></script>
+    <script src="./model_data/simulate_model.js"></script>
+    <script src="./model_data/model_reg.js"></script>
+    <script src="./model_data/model_tf.js"></script>
+    <script src="./vis/feat_manager_vis.js"></script>
+    <script src="./vis/moddet_radialbar.js"></script>
+    <script src="./vis/modreg_line.js"></script>
+    <script src="./vis/corr_target.js"></script>
+    <script src="./vis/corr_allvars.js"></script>
+    <script src="./vis/histo_multi.js"></script>
+    <script src="./vis/train_test_modlinevis.js"></script>
+</body>
+
+</html>
